@@ -10,7 +10,7 @@ $ wget -c https://studygolang.com/dl/golang/go1.11.linux-amd64.tar.gz
 ```
 $ shasum -a go1.11.linux-amd64.tar.gz
 ```
-**Important:**To show that the contents of the downloaded archive file are the exact copy provided on the GoLang website,the **256-bit** hash value generatede from the command above as seen in the output should be the same as that provided along with the download link.\n
+** Important: ** To show that the contents of the downloaded archive file are the exact copy provided on the GoLang website,the ** 256-bit ** hash value generatede from the command above as seen in the output should be the same as that provided along with the download link.\n
 
 if that is the case,proceed to the next step,otherwise download a new tarboll and run the check again.\n
 
@@ -20,9 +20,9 @@ $ sudo tar -C /usr/local -xvzf go1.11.linux-amd64.tar.gz
 ```
 ## Configuring GoLang Environment in Linux
 4.First,setup your Go workspace by creating a directory `~/go_workspace` which is the root of your workspace.The workspace is made of three directories namely:
--`bin` which will contain Go executable binaries.
--`src` which will store your source files.
--`pkg` which will store package objects.
+-`bin` which will contain Go executable binaries.  
+-`src` which will store your source files.  
+-`pkg` which will store package objects.  
 ```
 $ mkdir -p ~/go_workspace/{bin,src,pkg}
 $ cd ~/go_workspace
@@ -72,6 +72,6 @@ $ go install $GOPATH/src/hello/hello.go
 $ $GOBIN/hello
 ```
 ---
-**Reference Links**: https://golang.org/
-**Reference Links**: https://www.tecmint.com/install-go-in-linux/
-**Reference Links**: https://studygolang.com/
+**Reference Links**: https://golang.org/  
+**Reference Links**: https://www.tecmint.com/install-go-in-linux/  
+**Reference Links**: https://studygolang.com/  
