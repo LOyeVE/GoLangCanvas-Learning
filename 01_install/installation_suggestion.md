@@ -1,5 +1,4 @@
 # Golang(Go Programming Language)
----
 ## Install GoLang in Linux Systems
 1.Go to [official website](https://golang.org/dl/) or [Chinese Forum](https://studygolang.com/dl) and download the latest version(i.e 1.11) of GoLang in archive file as follows:
 ```
@@ -10,7 +9,7 @@ $ wget -c https://studygolang.com/dl/golang/go1.11.linux-amd64.tar.gz
 ```
 $ shasum -a go1.11.linux-amd64.tar.gz
 ```
-** Important: ** To show that the contents of the downloaded archive file are the exact copy provided on the GoLang website,the ** 256-bit ** hash value generatede from the command above as seen in the output should be the same as that provided along with the download link.\n
+**Important:** To show that the contents of the downloaded archive file are the exact copy provided on the GoLang website,the **256-bit** hash value generatede from the command above as seen in the output should be the same as that provided along with the download link.\n
 
 if that is the case,proceed to the next step,otherwise download a new tarboll and run the check again.\n
 
@@ -19,7 +18,7 @@ if that is the case,proceed to the next step,otherwise download a new tarboll an
 $ sudo tar -C /usr/local -xvzf go1.11.linux-amd64.tar.gz
 ```
 ## Configuring GoLang Environment in Linux
-4.First,setup your Go workspace by creating a directory `~/go_workspace` which is the root of your workspace.The workspace is made of three directories namely:
+4.First,setup your Go workspace by creating a directory `~/go_workspace` which is the root of your workspace.The workspace is made of three directories namely:  
 -`bin` which will contain Go executable binaries.  
 -`src` which will store your source files.  
 -`pkg` which will store package objects.  
@@ -28,7 +27,6 @@ $ mkdir -p ~/go_workspace/{bin,src,pkg}
 $ cd ~/go_workspace
 $ ls
 ```
-
 5.Now it`s time to execute Go like the rest of Linux programs without specifying its absolute path,its installation directory must be stored as one of the values of **$PATH environment variable**.
 ```
 sudo vim /etc/profile
