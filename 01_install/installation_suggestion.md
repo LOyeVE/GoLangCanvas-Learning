@@ -1,6 +1,6 @@
-<p># Golang(Go Programming Language)</p>
+# Golang(Go Programming Language)
 ---
-<p>## Install GoLang in Linux Systems</p>
+## Install GoLang in Linux Systems
 1.Go to [official website](https://golang.org/dl/) or [Chinese Forum](https://studygolang.com/dl) and download the latest version(i.e 1.11) of GoLang in archive file as follows:
 ```
 $ cd ~/Downloads/
@@ -18,7 +18,7 @@ if that is the case,proceed to the next step,otherwise download a new tarboll an
 ```
 $ sudo tar -C /usr/local -xvzf go1.11.linux-amd64.tar.gz
 ```
-<p>## Configuring GoLang Environment in Linux</p>
+## Configuring GoLang Environment in Linux
 4.First,setup your Go workspace by creating a directory `~/go_workspace` which is the root of your workspace.The workspace is made of three directories namely:
 -`bin` which will contain Go executable binaries.
 -`src` which will store your source files.
@@ -42,14 +42,14 @@ export GOPATH="$HOME/go_workspace"
 export GOBIN="$GOPATH/bin"
 source /etc/profile
 ```
-<p>## Verify GoLang Installation</p>
+## Verify GoLang Installation
 8.Run the commands below to view your Go version and environment:
 ```
 $ go version
 $ go env
 $ go help
 ```
-<p>## Complie and Run `ello world,golang!`</p>
+## Complie and Run `ello world,golang!`
 9.Begin by creating the hello project directory under ~/go_workspace/src/,
 ```
 $ mkdir -p ~/go_workspace/src/hello
@@ -72,6 +72,6 @@ $ go install $GOPATH/src/hello/hello.go
 $ $GOBIN/hello
 ```
 ---
-<p>**Reference Links**: https://golang.org/</p>
-<p>**Reference Links**: https://www.tecmint.com/install-go-in-linux/</p>
-<p>**Reference Links**: https://studygolang.com/</p>
+**Reference Links**: https://golang.org/
+**Reference Links**: https://www.tecmint.com/install-go-in-linux/
+**Reference Links**: https://studygolang.com/
