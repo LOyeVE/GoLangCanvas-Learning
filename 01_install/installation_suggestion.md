@@ -47,7 +47,7 @@ $ go version
 $ go env
 $ go help
 ```
-## Complie and Run `ello world,golang!`
+## Complie and Run `Hello world,Golang!`
 9.Begin by creating the hello project directory under ~/go_workspace/src/,
 ```
 $ mkdir -p ~/go_workspace/src/hello
