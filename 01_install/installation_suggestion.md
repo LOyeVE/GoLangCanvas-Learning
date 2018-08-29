@@ -1,5 +1,6 @@
-#Golang(Go Programming Language)
-##Install GoLang in Linux Systems
+#Golang(Go Programming Language)\n
+---
+##Install GoLang in Linux Systems\n
 1.Go to [official website](https://golang.org/dl/) or [Chinese Forum](https://studygolang.com/dl) and download the latest version(i.e 1.11) of GoLang in archive file as follows:
 ```
 $ cd ~/Downloads/
@@ -10,16 +11,16 @@ $ wget -c https://studygolang.com/dl/golang/go1.11.linux-amd64.tar.gz
 ```
 $ shasum -a go1.11.linux-amd64.tar.gz
 ```
-**Important:**To show that the contents of the downloaded archive file are the exact copy provided on the GoLang website,the **256-bit** hash value generatede from the command above as seen in the output should be the same as that provided along with the download link.
+**Important:**To show that the contents of the downloaded archive file are the exact copy provided on the GoLang website,the **256-bit** hash value generatede from the command above as seen in the output should be the same as that provided along with the download link.\n
 
-if that is the case,proceed to the next step,otherwise download a new tarboll and run the check again.
+if that is the case,proceed to the next step,otherwise download a new tarboll and run the check again.\n
 
 3.Then extract the tar archive files into /usr/local directory using the command below:
 ```
 $ sudo tar -C /usr/local -xvzf go1.11.linux-amd64.tar.gz
 ```
 
-##Configuring GoLang Environment in Linux
+##Configuring GoLang Environment in Linux\n
 4.First,setup your Go workspace by creating a directory `~/go_workspace` which is the root of your workspace.The workspace is made of three directories namely:
 -`bin` which will contain Go executable binaries.
 -`src` which will store your source files.
@@ -43,14 +44,14 @@ export GOPATH="$HOME/go_workspace"
 export GOBIN="$GOPATH/bin"
 source /etc/profile
 ```
-#Verify GoLang Installation
+#Verify GoLang Installation\n
 8.Run the commands below to view your Go version and environment:
 ```
 $ go version
 $ go env
 $ go help
 ```
-#Complie and Run `ello world,golang!`
+#Complie and Run `ello world,golang!`\n
 9.Begin by creating the hello project directory under ~/go_workspace/src/,
 ```
 $ mkdir -p ~/go_workspace/src/hello
@@ -60,17 +61,19 @@ Then use your favorite enitor to create the *hello.go* file:
 $ vi ~/go_workspace/src/hello/hello.go
 ```
 And the lines below in the file,save it and exit:
-	package main
-	import "fmt"
-	func main() {
-	fmt.Printf("Hello,world.Golang")
-	}
+```
+package main
+import "fmt"
+func main() {
+fmt.Printf("Hello,world.Golang")
+}
+```
 10.Now,compile the program above as using go install and run it:
 ```
 $ go install $GOPATH/src/hello/hello.go
 $ $GOBIN/hello
 ```
 ---
-**Reference Links**: https://golang.org/
-**Reference Links**: https://www.tecmint.com/install-go-in-linux/
-**Reference Links**: https://studygolang.com/
+**Reference Links**: https://golang.org/\n
+**Reference Links**: https://www.tecmint.com/install-go-in-linux/\n
+**Reference Links**: https://studygolang.com/\n
